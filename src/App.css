@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'DnDC_font';
+    src:url('./fonts/DnDC.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'bookmania_regular';
+    src:url('./fonts/BOOKMANIA-REGULAR.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'eberron';
+    src:url('./fonts/EBERRON_RUS_3.TTF') format('truetype');
+}
+
+/* body */
+
+.body {
+    box-sizing: border-box;
+    padding: 1vh;
+    height: 100%;
+}
+
+.body-success {
+    background-image: url('./assets/success.png');
+    background-position: 0 -5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.body-failure {
+    background-image: url('./assets/failure.png');
+    background-position: 0 -5vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* header */
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+}
+
+.header-logo {
+    width: 10%;
+    height: 10%;
+}
+
+.header-title {
+    margin: 0;
+    font-family: DnDC_font;
+    font-size: 7vw;
+    line-height: 5vw;
+    color: #a80316;
+}
+
+/* Complexity */
+
+.complexity {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    width: 50%;
+}
+
+.complexity-header {
+    font-family: eberron;
+    font-size: 2vw;
+    line-height: 0;
+    color: #a80316;
+    align-self: center;
+}
+
+.complexity-body {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 4;
+}
+
+.complexity-level {
+    background-color: #c6ff92;
+    border: 3px solid #120f0f;
+    border-radius: 5px;
+    width: 32%;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0.5;
+    background-image: url('./assets/easy.png');
+    background-repeat: no-repeat;
+    background-size: 0%;
+
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.complexity-level:hover {
+    opacity: 1;
+}
+
+.complexity-level:nth-child(2) {
+    background-image: url('./assets/medium.png') !important;
+    background-color: #ffd54c;
+}
+
+.complexity-level:nth-child(3) {
+    background-image: url('./assets/hard.png') !important;
+    background-color: #ff674c;
+}
+
+.complexity-level h3 {
+    font-family: eberron;
+    font-size: 1vw;
+    line-height: 0;
+}
+
+.complexity-level span {
+    font-family: bookmania_regular;
+    font-size: 1vw;
+}
+
+.complexity-impossible {
+    align-self: center;
+    flex-grow: 1;
+    margin-top: 1%;
+    width: 99%;
+    font-family: eberron;
+    font-weight: 600;
+    font-size: 1vw;
+    text-align: center;
+    background-color: #999999;
+    border: 3px solid #120f0f;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+    background-image: url('./assets/impossible.png');
+
+    background-size: 0%;
+
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.complexity-impossible:hover {
+    opacity: 1;
+}
+
+.cl-active {
+    opacity: 1;
+    background-size: 15%;
+}
+
+.ci-active {
+    opacity: 1;
+    background-size: contain;
+}
+
+.complexity-number {
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: eberron;
+    font-size: 7vw;
+    opacity: 0;
+    align-self: center;
+    text-align: center;
+
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.complexity-number span {
+    margin-left: 2vw;
+    
+}
+
+.complexity-btns {
+    display: flex;
+    width: 2vw;
+    margin-top: 5%;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+}
+
+.complexity-btn {
+    width: 100%;
+    height: 2vw;
+    background-color: transparent;
+    border: none;
+    opacity: 0.3;
+}
+
+.complexity-btn:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.complexity-btn img{
+    width: 100%;
+}
+
+.cn-active {
+    opacity: 1;
+    animation: appearance 2.5s forwards;
+}
+
+.error-banner {
+    font-family: eberron;
+    font-size: 4vw;
+    opacity: 0;
+    align-self: center;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1px;
+
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/* main */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dice-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-content {
+    position: absolute;
+    background-image: url('./assets/result_flag.png');
+    width: 40vw;
+    height: 20vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: center;
+    top: 12vw;
+    line-height: 14vw;
+    font-family: eberron;
+    font-size: 2vw;
+    opacity: 0;
+}
+
+.rc-active {
+    opacity: 1;
+}
+
+.dice {
+    position: relative;
+    width: 20vw;
+    height: 20vw;
+    background-image: url('./assets/red_dice.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dice:hover {
+    cursor: pointer;
+    animation: shaking 1000ms infinite;
+}
+
+.drolling {
+    animation: rolling 1000ms infinite;
+    pointer-events: none;
+}
+
+.dshaking {
+    animation: shaking 100ms infinite;
+    pointer-events: none;
+}
+
+.dice-face {
+    position: absolute;
+    top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    font-family: bookmania_regular;
+    font-size: 4vw;
+    line-height: 0;
+    text-align: center;
+
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+@keyframes appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes grow {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+@keyframes reducing  {
+	0% {
+		transform: scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(10px, 10px) rotate(10deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-10px, 10px) rotate(-10deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+
+@keyframes rolling {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(100px, 50px) rotate(360deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-50px, 100px) rotate(-10deg); }
+    100% { transform: translate(0, 0) rotate(360deg); }
+}
+
