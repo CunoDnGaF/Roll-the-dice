@@ -349,11 +349,11 @@ main {
     }
 
     .complexity-level h3 {
-        font-size: 2vh;
+        font-size: 80%;
     }
     
     .complexity-level span {
-        font-size: 2vh;
+        font-size: 80%;
     }
     
     .complexity-impossible {
