@@ -60,7 +60,7 @@ function DiceBlock() {
       <span className={isSuccess === '' ? 'result-content' : 'result-content rc-active'}>
         {isSuccess}
       </span>
-      <div className={diceState === 'rolling' ? 'dice drolling' : diceState === 'shaking' ? 'dice dshaking' : 'dice'} onClick={() => onDiceClick()}>
+      <div className={diceState === 'rolling' ? 'dice drolling' : diceState === 'shaking' ? 'dice dshaking' : 'dice'} onClick={() => onDiceClick()} onTouchStart={() => onDiceClick()}>
         <span className='dice-face'>{diceState === 'rolling' ? '' : diceFace}</span>
       </div>
     </div>

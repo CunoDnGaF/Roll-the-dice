@@ -42,9 +42,15 @@ header {
     margin-bottom: 2vh;
 }
 
-.header-logo {
-    width: 10%;
+.header-logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 10%;
+}
+
+.header-logo {
+    width: 20%;
 }
 
 .header-title {
@@ -184,8 +190,7 @@ header {
 }
 
 .complexity-number span {
-    margin-left: 2vw;
-    
+    margin-left: 2vw;   
 }
 
 .complexity-btns {
@@ -315,6 +320,78 @@ main {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+}
+
+/* smartphone */
+
+@media (max-width: 640px) and (hover: none) and (pointer: coarse) {
+    
+    header {
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 10vh;
+    }
+
+    .header-logo {
+        width: 10%;
+    }
+
+    .complexity {
+        width: 100%;
+    }
+
+    .complexity-header {
+        font-size: 5vw;
+    }
+    
+    .complexity-body {
+        height: 10vh;
+    }
+
+    .complexity-level h3 {
+        font-size: 3vw;
+    }
+    
+    .complexity-level span {
+        font-size: 80%;
+    }
+    
+    .complexity-impossible {
+        height: 4vh;
+        font-size: 4vw;
+        line-height: 4vh;
+    }
+
+    .complexity-number {
+        margin-top: 2vh;
+    }
+
+    .error-banner {
+        margin-top: 3vh;
+        font-size: 6vw;
+    }
+    
+    .dice-block {
+        width: 100%;
+    }
+    
+    .result-content {
+        width: 80vw;
+        height: 60vw;
+        top: 50vw;
+        line-height: 40vw;
+        font-size: 6vw;
+    }
+    
+    .dice {
+        width: 60vw;
+        height: 60vw;
+    }
+
+    .dice-face {
+        font-size: 10vw;
+    }
+    
 }
 
 @keyframes appearance {
