@@ -345,21 +345,34 @@ main {
     }
     
     .complexity-body {
-        height: 10vh;
+        height: 15vh;
     }
 
     .complexity-level h3 {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     .complexity-level span {
-        font-size: 80%;
+        font-size: 2vh;
     }
     
     .complexity-impossible {
-        height: 4vh;
+        height: 5vh;
         font-size: 4vw;
-        line-height: 4vh;
+        line-height: 5vh;
+    }
+
+    .cl-active {
+        background-size: 60%;
+        background-position: center;
+    }
+
+    .cl-active span {
+        color: transparent;
+    }
+    
+    .ci-active {
+        background-size: contain;
     }
 
     .complexity-number {
@@ -378,7 +391,7 @@ main {
     .result-content {
         width: 80vw;
         height: 60vw;
-        top: 50vw;
+        top: 70vw;
         line-height: 40vw;
         font-size: 6vw;
     }
