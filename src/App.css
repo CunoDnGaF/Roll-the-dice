@@ -345,11 +345,11 @@ main {
     }
     
     .complexity-body {
-        height: 15vh;
+        height: 20vh;
     }
 
     .complexity-level h3 {
-        font-size: 4vw;
+        font-size: 2vh;
     }
     
     .complexity-level span {
@@ -391,7 +391,7 @@ main {
     .result-content {
         width: 80vw;
         height: 60vw;
-        top: 70vw;
+        top: 40vh;
         line-height: 40vw;
         font-size: 6vw;
     }
